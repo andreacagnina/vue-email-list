@@ -17,9 +17,9 @@
 <body>
     <div id="app">
         <button @click="generateRandomEmail(), cleanArray()">Genera e visualizza</button>
-        <ul v-cloak>
+        <ul v-cloak class="list-group" v-if="arrEmail.length==10">
             <li v-for="(email, index) in arrEmail">
-                {{index+1}} 📨 {{email}}
+                {{index+1}} <span class="mx-3">📨</span> <a href="#">{{email}}</a>
             </li>
         </ul>
 
