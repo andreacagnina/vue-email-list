@@ -1,6 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
+            arrEmail: [11, 11]
 
         }
     },
