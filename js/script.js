@@ -1,11 +1,13 @@
 const app = Vue.createApp({
     data() {
         return {
-            arrEmail: [11, 11]
+            arrEmail: []
 
         }
     },
+    // ottengo le mail non appena il documento viene creato
     created() {
+        this.generateRandomEmail();
 
     },
     watch: {
